@@ -1,0 +1,86 @@
+/* style.css FOR HOMEPAGE */
+/* Body */
+body {
+font-size: 16px;
+font-family: Helvetica;
+line-height: 1.5;
+
+background-color: #000000; /*#00ADEF*/
+color: #ffffff;
+}
+/* Source: https://www.superhi.com/video/smooth-movements-with-javascript Retrieved on 02/01/2020 */
+
+/* Headers */
+h1 {
+position: absolute;
+top: 40%;
+left: 50%;
+font-size: 12vmin;
+transform: translate(-50%, -50%);
+z-index: -1;
+}
+
+/* Paragraphs */
+/* COMP info */
+#one {
+position: absolute;
+top: 55%;
+left: 50%;
+font-size: 3vmin;
+transform: translate(-65%, -50%);
+z-index: -1;
+}
+/* Page links */
+#two {
+position: absolute;
+top: 72%;
+left: 56%;
+font-size: 3vmin;
+transform: translate(-103%, -50%);
+z-index: 1;
+}
+
+@keyframes heartbeat {
+  0% {transform: translate(-50%, -50%) scale(1);}
+  50% {transform: translate(-50%, -50%) scale(2);}
+  100% {transform: translate(-50%, -50%) scale(1);}
+}
+
+div.ball {
+background-color: #ffffff;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+z-index: 0;
+
+position: absolute;
+top: 0;
+left: 0;
+transform: translate(-50%, -50%);
+
+mix-blend-mode: difference;
+
+animation: heartbeat 3s infinite;
+}
+
+/* div.cn {
+  z-index: -1;
+} */
+
+/* div.ghibli {
+  background-image: url(/image/blackghibli.jpg);
+} */
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss_link Retrieved on 02/02/2020 */
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+/* visited link */
+a:visited {
+  color: yellow;
+}
+/* mouse over link */
+a:hover {
+  color: blue;
+}
