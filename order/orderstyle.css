@@ -1,0 +1,73 @@
+/* orderstyle.css */
+body {
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Source: https://www.superhi.com/video/parallax-overlapping-sections-using-sticky-positioning Retrieved 02/01/2020 */
+/* h1, section {
+  padding: 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+} */
+#products:hover{
+background-color: #e7eff6;
+}
+/* #checkout:hover{
+background-color: #d0e1f9;
+} */
+#shipping:hover{
+background-color: #d0e1f9;
+}
+#billing:hover{
+background-color: #b3cde0;
+}
+
+#first:hover{
+background-color: #9dc6d8;
+}
+#last:hover{
+background-color: #ffdd94;
+}
+#address:hover{
+background-color: #00b3ca;
+}
+#state:hover{
+background-color: #fa897b;
+}
+#zipcode:hover{
+background-color: #ead98b;
+}
+#email:hover{
+background-color: #ccabd8;
+}
+#phone:hover{
+background-color: #6096fd;
+}
+
+section.products {
+  background-color: #e7eff6;
+  height: 600px;
+}
+section.cart {
+  background-color: #d0e1f9;
+}
+section.confirmation {
+  background-color: #b3cde0;
+}
+
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced Retrieved on 02/02/2020 */
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: blue;
+}

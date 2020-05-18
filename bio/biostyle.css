@@ -1,0 +1,66 @@
+/* biostyle.css */
+body {
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+/* Source: https://www.superhi.com/video/parallax-overlapping-sections-using-sticky-positioning Retrieved 02/01/2020 */
+h1, section {
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+#next {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  }
+
+img.round {
+  border-radius: 50%;
+}
+
+section.about {
+  background-color: #e7eff6;
+  height: 150px
+}
+section.pic {
+  background-color: #d0e1f9;
+  height: 450px;
+}
+section.animatedadult {
+  background-color: #b3cde0;
+  height: 600px;
+}
+section.anthology {
+  background-color: #6497b1;
+  height: 600px;
+}
+section.bingeseries {
+  background-color: #4b86b4;
+  height: 600px;
+}
+section.thrillers {
+  background-color: #005b96;
+  height: 600px;
+}
+section.supernatural {
+  background-color: #03396c;
+  height: 1000px;
+}
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced Retrieved on 02/02/2020 */
+a:link, a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: blue;
+}

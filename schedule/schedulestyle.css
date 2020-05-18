@@ -1,0 +1,61 @@
+/* schedulestyle.css */
+/* Body */
+body {
+  font-size: 16 px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Table */
+table, th, td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  text-align: center;
+}
+th {
+  background-color: #7cd4ff;
+}
+
+table {
+  width: 50%;
+}
+tr:hover {background-color:#b69cf6;}
+
+/* Schedule */
+section.Schedule {
+  background-color: #ffffff;
+}
+
+#previous {
+  position: absolute;
+  top: 350px;
+  left: 75px;
+  }
+
+#next {
+  position: absolute;
+  top: 400px;
+  right: 175px;
+}
+
+#legend {
+  position: absolute;
+  top: 100px;
+  right: 175px;
+}
+
+/* Source: https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced Retrieved on 02/02/2020 */
+
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: black;
+  color: white;
+}

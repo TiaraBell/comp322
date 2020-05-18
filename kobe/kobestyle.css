@@ -1,0 +1,58 @@
+/* kobestyle.css */
+/* Body */
+body {
+  font-size: 18px;
+  /* font-family: Helvetica; */
+  line-height: 0.5;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#previous {
+  position: absolute;
+  top: 350px;
+  left: 75px;
+  }
+
+/* Source: https://www.superhi.com/video/how-to-make-a-hover-slideshow Retrieved on 02/01/2020 */
+
+section.slideshow {
+  width: 900px;
+  height: 600px;
+  cursor: pointer;
+  position: relative;
+}
+
+section.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 600px;
+  z-index: 0;
+}
+
+section.slideshow img:first-child {
+  z-index: 1;
+}
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_link_advanced Retrieved on 02/02/2020 */
+/* Direction Links */
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: white;
+  color: black;
+}

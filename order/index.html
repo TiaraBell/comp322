@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- Create an order page with the following criteria:
+
+Five items listed with checkbox.
+Shipping method listed with radio buttons.
+Payment with a combo box.
+Store location with list box.
+Billing date with date picker.
+Must use a table and Fieldset.
+Capture Customer mailing information
+I should get to your page by myserver.ncat.edu/order -->
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Order</title>
+    <meta name="description" content="COMP322 Website">
+    <meta name="author" content="Tiara Bell">
+    <link rel="stylesheet" type="text/css" href="orderstyle.css">
+</head>
+
+<body>
+    <section id="products">
+        <h1>Business Name</h1>
+        <h2>Products</h2>
+        <form POST="comp322-17.ncat.edu" target="_blank">
+            <table>
+                <tr>
+                    <td>Image</td>
+                    <td>Checkbox
+                        <br>
+                        <label for="item1">Item1</label>
+                        <input type="checkbox" id="item1" name="Item1">
+                        <br>
+                        <label for="item2">Item2</label>
+                        <input type="checkbox" id="item2" name="Item2">
+                        <br>
+                        <label for="item3">Item3</label>
+                        <input type="checkbox" id="item3" name="Item3">
+                        <br>
+                        <label for="item4">Item4</label>
+                        <input type="checkbox" id="item4" name="Item4">
+                        <br>
+                        <label for="item5">Item5</label>
+                        <input type="checkbox" id="item5" name="Item5">
+                        <br>
+                    </td>
+                    <td>Description</td>
+                    <td>Cart Preview</td>
+                </tr>
+            </table>
+    </section>
+    <!-- <section id="checkout"> -->
+      <section id="shipping">
+        <h2>Cart</h2>
+        <h3>Customer Information</h3>
+        <caption><strong>Shipping Address</strong></caption>
+        <div>
+            <p>
+                <label for="first">First name:</label>
+                <input type="text" id="first" name="first" placeholder="First Name">
+            </p>
+            <p>
+                <label for="last">Last name:</label>
+                <input type="text" id="last" name="last" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="address" placeholder="Street Address">
+            </p>
+            <p>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="State">
+            </p>
+            <p>
+                <label for="zipcode">Zipcode:</label>
+                <input type="number" id="zipcode" name="zipcode" placeholder="Ex: 27401">
+            </p>
+            <p>
+                <label for="email">Email address:</label>
+                <input type="text" id="email" name="email" placeholder="Email Address">
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+            </p>
+        </div>
+        <div>
+            <p><strong>Shipping
+            </strong>
+                <br>
+            </p>
+            <p>
+                <input type="radio" name="shipping" value="standard" id="standard">
+                <label for="standard">Standard (7-10 Business Days)</label>
+            </p>
+            <p>
+                <input type="radio" name="shipping" value="ground" id="ground">
+                <label for="ground">Ground (4-7 Business Days)</label>
+            </p>
+            <p>
+                <input type="radio" name="shipping" value="express" id="express">
+                <label for="express">Express (3-5 Business Days)</label>
+            </p>
+            <p>
+                <input type="radio" name="shipping" value="nextday" id="nextday">
+                <label for="nextday">Next Day (1-2 Business Days)</label>
+            </p>
+            <p>
+                <input type="radio" name="shipping" value="pickup" id="pickup" checked>
+                <label for="pickup">Store Pick Up</label>
+            </p>
+            <select name="location" size="4">
+                <option value="peachcreek">Peach Creek Mall</option>
+                <option value="culdesac">The Cul-de-Sac</option>
+                <option value="oldcountry">The Old Country</option>
+                <option value="greensboro">Greensboro</option>
+            </select>
+        </div>
+      </section>
+      <section id="billing">
+        <caption><strong><br>Billing Address</strong></caption>
+        <div>
+            <p>
+                <label for="first">First name:</label>
+                <input type="text" id="first" name="first" placeholder="First Name">
+            </p>
+            <p>
+                <label for="last">Last name:</label>
+                <input type="text" id="last" name="last" placeholder="Last Name">
+            </p>
+            <p>
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="address" placeholder="Street Address">
+            </p>
+            <p>
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="State">
+            </p>
+            <p>
+                <label for="zipcode">Zipcode:</label>
+                <input type="number" id="zipcode" name="zipcode" placeholder="Ex: 27401">
+            </p>
+        </div>
+        <div>
+          <fieldset>
+              <legend><strong>Payment</strong></legend>
+              <input list="payment" placeholder="Payment Type">
+              <datalist id="payment">
+                  <option value="Visa">
+                      <option value="Mastercard">
+                          <option value="Paypal">
+                              <option value="Apple Pay">
+                                  <option value="Gift Card">
+                                      <option value="Bitcoin">
+              </datalist>
+              <p>
+                  <label for="fullname">Carholder Name</label>
+                  <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+              </p>
+              <p>
+                  <label for="cardnumber">Card Number</label>
+                  <input type="number" id="cardnumber" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+              </p>
+              <p>
+                  <label for="expdate">Expiration Date</label>
+                  <input type="number" id="expdate" name="expdate" placeholder="Ex. 06/23">
+              </p>
+              <p>
+                  <label for="cvv">CVV</label>
+                  <input type="number" id="cvv" name="cvv" placeholder="3-digit code">
+              </p>
+
+              <label for="billingdate">Billing Date</label>
+              <input type="date" id="billingdate" name="billingdate" min="2020-02-07">
+          </fieldset>
+          <p>
+              <input type="submit" value="Place Order">
+          </p>
+        </div>
+      </section>
+    <!-- </section> -->
+    <section id="confirmation">
+    </section>
+    </form>
+    <!-- <script src="/js/order.js"></script> -->
+    <!-- <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=north%20carolina%20a%26t%20state&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+            <a href="https://www.divi-discounts.com">divi-discounts.com</a>
+        </div>
+        <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                height: 500px;
+                width: 600px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none!important;
+                height: 300px;
+                width: 400px;
+            }
+        </style>
+    </div> -->
+</body>
+
+</html>
