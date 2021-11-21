@@ -6,6 +6,20 @@ body {
   color: #000000;
 }
 
+h1 {
+  text-align: center;
+}
+
+div {
+  position: relative;
+}
+
+section {
+  position: absolute;
+  left: 27.5%;
+  /* transform: translate(-50%, -50%); */
+}
+
 /* Table */
 table, th, td {
   border: 1px solid #ddd;
@@ -26,9 +40,17 @@ section.Schedule {
   background-color: #ffffff;
 }
 
+td.pink {
+  background-color: pink;
+}
+
+td.grey {
+  background-color: grey;
+}
+
 #previous {
   position: absolute;
-  top: 350px;
+  top: 400px;
   left: 75px;
   }
 

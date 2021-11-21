@@ -12,6 +12,12 @@ h1, section {
   top: 0;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #previous {
   position: fixed;
   bottom: 10px;

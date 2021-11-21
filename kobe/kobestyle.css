@@ -13,6 +13,15 @@ h1 {
   font-size: 30px;
 }
 
+div {
+  position: relative;
+}
+section {
+  position: absolute;
+  top: 50%;
+  left: 17.5%;
+}
+
 #previous {
   position: absolute;
   top: 350px;
